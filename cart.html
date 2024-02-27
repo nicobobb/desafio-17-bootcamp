@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desafío 17 | Nicolás Bobb</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <header class="header__container">
+            <div class="header__div">
+                <a href="/"
+                    ><img class="header__logo" src="./assets/logo.jpg" alt=""
+                /></a>
+            </div>
+            <nav class="menu__container">
+                <div class="menu__list">
+                    <a href="/" class="menu__item">Menú</a>
+                </div>
+            </nav>
+            <div class="cart__container">
+                <p class="cart__item">
+                    <a class="cart__icon" href="/cart.html"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                    <span id="cartNumber" class="cart__number">0</span>
+                </p>
+            </div>
+        </header>
+        <section class="order__section">
+            <div class="order__div">
+                <form id="sendOrder" class="order__form">
+                    <input
+                        id="name"
+                        class="order__input"
+                        type="text"
+                        placeholder="Nombre de usuario"
+                    />
+                    <span id="errorName"></span>
+                    <input
+                        id="address"
+                        class="order__input"
+                        type="text"
+                        placeholder="Dirección de entrega"
+                    />
+                    <span id="errorAddress"></span>
+                    <input
+                        id="phone"
+                        class="order__input"
+                        type="text"
+                        placeholder="Número de teléfono"
+                    />
+                    <span id="errorPhone"></span>
+                    <p id="orderInfo" class="order__p">Tu pedido</p>
+                    <div id="confOrder"></div>
+                    <div id="orderProductList" class="order__productList"></div>
+                    <div id="orderTotalPrice" class="order__totalPrice"></div>
+                    <div id="noProductAlert" class="noProduct__alert">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="order__span"
+                            >No hay ningún producto agregado en el carrito</span
+                        >
+                    </div>
+
+                    <button type="submit" class="order__button">
+                        Realizar pedido
+                    </button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer__section">
+            <div class="footer__div">
+                <img class="footer__logo" src="./assets/logo.jpg" alt="" />
+            </div>
+            <div class="footer__divSocial">
+                <h3 class="social__h3">Redes sociales</h3>
+                <div class="social__list">
+                    <a class="social__link" href="/."
+                        ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                    <a class="social__link" href="/."
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                    <a class="social__link" href="/."
+                        ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./validations.js"></script>
+        <script src="./cart.js"></script>
+    </body>
+</html>
